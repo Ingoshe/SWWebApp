@@ -1,0 +1,158 @@
+{
+    "nav": {
+      "home": "Home",
+      "monitors": "Monitors",
+      "aboutUI": "About UI",
+      "articles": "Articles",
+      "contact": "Contact",
+      "login": "Log in",
+      "signup": "Sign Up",
+      "logout": "Log out",
+      "searchPlaceholder": "Search UI"
+    },
+    "hero": {
+      "ace": {
+        "eyebrow": "The pinnacle of exclusivity",
+        "headline": "Only the select few hold this card.",
+        "body": "The 2026 Selective Ace collection is here — every tier backed by crystal-clear standards and absolute precision.",
+        "cta": "Discover the Ace ✦"
+      },
+      "queen": {
+        "eyebrow": "Crafted for the refined",
+        "headline": "Grace is not given. It is earned.",
+        "body": "The Queen's Grace collection celebrates those who lead with elegance — every detail woven in rose gold and quiet confidence.",
+        "cta": "Enter the Court ❧"
+      },
+      "king": {
+        "eyebrow": "Command without question",
+        "headline": "Rule the room. Own the moment.",
+        "body": "The King's Command collection stands apart — authoritative, minimal, and built for those who need no introduction.",
+        "cta": "Claim the Throne ♛"
+      }
+    },
+    "cards": {
+      "ace": {
+        "tier": "CONCEPT 3",
+        "subtitle": "SELECTIVE ACE",
+        "exclusiveAccess": "EXCLUSIVE ACCESS",
+        "playfulInteraction": "Playful Interaction",
+        "exploreNow": "EXPLORE NOW",
+        "acesClarity": "ACE'S CLARITY",
+        "diamondTier": "DIAMOND TIER",
+        "crystalClarity": "Crystal Clarity",
+        "discover": "DISCOVER",
+        "apexMember": "APEX MEMBER",
+        "limitlessAccess": "Limitless Access",
+        "joinNow": "JOIN NOW",
+        "ultraSelect": "ULTRA SELECT",
+        "sovereignAccess": "Sovereign Access",
+        "activate": "ACTIVATE"
+      },
+      "queen": {
+        "tier": "CONCEPT 2",
+        "subtitle": "REFINED QUEEN",
+        "premierMembership": "PREMIER MEMBERSHIP",
+        "modularGeometry": "Modular Geometry",
+        "learnMore": "LEARN MORE",
+        "queensGrace": "QUEEN'S GRACE",
+        "roseElite": "ROSE ELITE",
+        "goldRefinement": "Gold Refinement",
+        "explore": "EXPLORE",
+        "goldenCircle": "GOLDEN CIRCLE",
+        "prestigeCollection": "Prestige Collection",
+        "viewMore": "VIEW MORE",
+        "curatedAccess": "CURATED ACCESS",
+        "artisanTier": "Artisan Tier",
+        "getAccess": "GET ACCESS"
+      },
+      "king": {
+        "tier": "CONCEPT 1",
+        "subtitle": "AUTHORITATIVE KING",
+        "professionalSolution": "PROFESSIONAL SOLUTION",
+        "elevatedMinimalism": "Elevated Minimalism",
+        "viewDetails": "VIEW DETAILS",
+        "kingsCommand": "KING'S COMMAND",
+        "executiveSuite": "EXECUTIVE SUITE",
+        "commandControl": "Command & Control",
+        "claimAccess": "CLAIM ACCESS",
+        "sovereignPlan": "SOVEREIGN PLAN",
+        "totalAuthority": "Total Authority",
+        "ascend": "ASCEND",
+        "grandAuthority": "GRAND AUTHORITY",
+        "prestigePower": "Prestige Power",
+        "enter": "ENTER"
+      }
+    },
+    "interest": {
+      "ace": {
+        "heading": "Discover by clarity",
+        "subheading": "Precision-curated for the selective few.",
+        "crystalSpaces": "Crystal Spaces",
+        "precisionCraft": "Precision Craft",
+        "aetherSky": "Aether & Sky",
+        "arcticEdge": "Arctic Edge"
+      },
+      "queen": {
+        "heading": "Explore by grace",
+        "subheading": "Handpicked for the refined and the bold.",
+        "botanicalTrails": "Botanical Trails",
+        "velvetDining": "Velvet Dining",
+        "artsSalons": "Arts & Salons",
+        "spaRetreat": "Spa & Retreat"
+      },
+      "king": {
+        "heading": "Command your world",
+        "subheading": "Authority in every direction you choose.",
+        "powerSport": "Power & Sport",
+        "privateAviation": "Private Aviation",
+        "estateLand": "Estate & Land",
+        "navalSea": "Naval & Sea"
+      }
+    },
+    "footer": {
+      "aboutUs": "About Us Site",
+      "explore": "Explore",
+      "doBusinessWithUs": "Do Business With Us",
+      "getTheApp": "Get The App",
+      "ourSites": "Our Sites",
+      "copyright": "© 2026 Site LLC All rights reserved.",
+      "termsOfUse": "Terms of Use",
+      "privacyStatement": "Privacy and Cookies Statement",
+      "cookieConsent": "Cookie consent",
+      "howItWorks": "How the site works",
+      "contactUs": "Contact us",
+      "accessibilityStatement": "Accessibility Statement",
+      "readMore": "Read more",
+      "showLess": "Show less",
+      "links": {
+        "aboutUs": "About Us",
+        "press": "Press",
+        "resourcesPolicies": "Resources and Policies",
+        "careers": "Careers",
+        "investorRelations": "Investor Relations",
+        "trustSafety": "Trust & Safety",
+        "contactUs": "Contact us",
+        "bugBounty": "Bug Bounty Program",
+        "techBlog": "Site Technology Blog",
+        "writeReview": "Write a review",
+        "addPlace": "Add a Place",
+        "join": "Join",
+        "travelersChoice": "Travelers' Choice",
+        "helpCenter": "Help Center",
+        "travelStories": "Travel Stories",
+        "owners": "Owners",
+        "businessAdvantage": "Business Advantage",
+        "sponsoredPlacements": "Sponsored Placements",
+        "advertise": "Advertise with Us",
+        "contentAPI": "Access our Content API",
+        "affiliate": "Become an Affiliate",
+        "iphoneApp": "iPhone App",
+        "androidApp": "Android App"
+      },
+      "sites": {
+        "theFork": "Book the best restaurants with",
+        "viator": "Book tours and attraction tickets on",
+        "cruiseCritic": "Read cruise reviews on"
+      }
+    }
+  }

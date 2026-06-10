@@ -1,0 +1,158 @@
+{
+    "nav": {
+      "home": "Início",
+      "monitors": "Monitores",
+      "aboutUI": "Sobre",
+      "articles": "Artigos",
+      "contact": "Contacto",
+      "login": "Entrar",
+      "signup": "Registar",
+      "logout": "Sair",
+      "searchPlaceholder": "Pesquisar"
+    },
+    "hero": {
+      "ace": {
+        "eyebrow": "O auge da exclusividade",
+        "headline": "Apenas os poucos selecionados detêm este cartão.",
+        "body": "A coleção Selective Ace 2026 chegou — cada nível sustentado por padrões cristalinos e precisão absoluta.",
+        "cta": "Descobrir o Ás ✦"
+      },
+      "queen": {
+        "eyebrow": "Criado para os refinados",
+        "headline": "A graça não é dada. É conquistada.",
+        "body": "A coleção Queen's Grace celebra quem lidera com elegância — cada detalhe tecido em ouro rosa e confiança tranquila.",
+        "cta": "Entrar na Corte ❧"
+      },
+      "king": {
+        "eyebrow": "Comando sem questionamento",
+        "headline": "Domine a sala. Possua o momento.",
+        "body": "A coleção King's Command destaca-se — autoritária, minimalista, construída para quem não precisa de apresentação.",
+        "cta": "Reclamar o Trono ♛"
+      }
+    },
+    "cards": {
+      "ace": {
+        "tier": "CONCEITO 3",
+        "subtitle": "ÁS SELETIVO",
+        "exclusiveAccess": "ACESSO EXCLUSIVO",
+        "playfulInteraction": "Interação Lúdica",
+        "exploreNow": "EXPLORAR",
+        "acesClarity": "CLAREZA DO ÁS",
+        "diamondTier": "NÍVEL DIAMANTE",
+        "crystalClarity": "Clareza Cristalina",
+        "discover": "DESCOBRIR",
+        "apexMember": "MEMBRO APEX",
+        "limitlessAccess": "Acesso Ilimitado",
+        "joinNow": "JUNTAR-SE",
+        "ultraSelect": "ULTRA SELETO",
+        "sovereignAccess": "Acesso Soberano",
+        "activate": "ATIVAR"
+      },
+      "queen": {
+        "tier": "CONCEITO 2",
+        "subtitle": "RAINHA REFINADA",
+        "premierMembership": "ADESÃO PREMIER",
+        "modularGeometry": "Geometria Modular",
+        "learnMore": "SABER MAIS",
+        "queensGrace": "GRAÇA DA RAINHA",
+        "roseElite": "ÉLITE ROSADA",
+        "goldRefinement": "Refinamento Dourado",
+        "explore": "EXPLORAR",
+        "goldenCircle": "CÍRCULO DOURADO",
+        "prestigeCollection": "Coleção Prestígio",
+        "viewMore": "VER MAIS",
+        "curatedAccess": "ACESSO CURADO",
+        "artisanTier": "Nível Artesão",
+        "getAccess": "OBTER ACESSO"
+      },
+      "king": {
+        "tier": "CONCEITO 1",
+        "subtitle": "REI AUTORITATIVO",
+        "professionalSolution": "SOLUÇÃO PROFISSIONAL",
+        "elevatedMinimalism": "Minimalismo Elevado",
+        "viewDetails": "VER DETALHES",
+        "kingsCommand": "COMANDO DO REI",
+        "executiveSuite": "SUITE EXECUTIVA",
+        "commandControl": "Comando & Controlo",
+        "claimAccess": "RECLAMAR ACESSO",
+        "sovereignPlan": "PLANO SOBERANO",
+        "totalAuthority": "Autoridade Total",
+        "ascend": "ASCENDER",
+        "grandAuthority": "GRANDE AUTORIDADE",
+        "prestigePower": "Poder Prestígio",
+        "enter": "ENTRAR"
+      }
+    },
+    "interest": {
+      "ace": {
+        "heading": "Descobrir por clareza",
+        "subheading": "Selecionado com precisão para os poucos eleitos.",
+        "crystalSpaces": "Espaços de Cristal",
+        "precisionCraft": "Artesanato de Precisão",
+        "aetherSky": "Éter & Céu",
+        "arcticEdge": "Bordo Ártico"
+      },
+      "queen": {
+        "heading": "Explorar com graça",
+        "subheading": "Escolhido à mão para os refinados e audaciosos.",
+        "botanicalTrails": "Trilhos Botânicos",
+        "velvetDining": "Jantar de Veludo",
+        "artsSalons": "Artes & Salões",
+        "spaRetreat": "Spa & Retiro"
+      },
+      "king": {
+        "heading": "Comande o seu mundo",
+        "subheading": "Autoridade em cada direção que escolher.",
+        "powerSport": "Poder & Desporto",
+        "privateAviation": "Aviação Privada",
+        "estateLand": "Propriedade & Terra",
+        "navalSea": "Naval & Mar"
+      }
+    },
+    "footer": {
+      "aboutUs": "Sobre o site",
+      "explore": "Explorar",
+      "doBusinessWithUs": "Faça negócio connosco",
+      "getTheApp": "Obter a aplicação",
+      "ourSites": "Os nossos sites",
+      "copyright": "© 2026 Site LLC Todos os direitos reservados.",
+      "termsOfUse": "Termos de utilização",
+      "privacyStatement": "Declaração de privacidade e cookies",
+      "cookieConsent": "Consentimento de cookies",
+      "howItWorks": "Como funciona o site",
+      "contactUs": "Contacte-nos",
+      "accessibilityStatement": "Declaração de acessibilidade",
+      "readMore": "Ler mais",
+      "showLess": "Mostrar menos",
+      "links": {
+        "aboutUs": "Sobre nós",
+        "press": "Imprensa",
+        "resourcesPolicies": "Recursos e políticas",
+        "careers": "Carreiras",
+        "investorRelations": "Relações com investidores",
+        "trustSafety": "Confiança & Segurança",
+        "contactUs": "Contacte-nos",
+        "bugBounty": "Programa Bug Bounty",
+        "techBlog": "Blog tecnológico",
+        "writeReview": "Escrever uma avaliação",
+        "addPlace": "Adicionar um lugar",
+        "join": "Juntar-se",
+        "travelersChoice": "Escolha dos viajantes",
+        "helpCenter": "Centro de ajuda",
+        "travelStories": "Histórias de viagem",
+        "owners": "Proprietários",
+        "businessAdvantage": "Vantagem comercial",
+        "sponsoredPlacements": "Colocações patrocinadas",
+        "advertise": "Anunciar connosco",
+        "contentAPI": "Aceder à nossa API de conteúdo",
+        "affiliate": "Torne-se afiliado",
+        "iphoneApp": "Aplicação iPhone",
+        "androidApp": "Aplicação Android"
+      },
+      "sites": {
+        "theFork": "Reserve os melhores restaurantes com",
+        "viator": "Reserve tours e bilhetes de atração em",
+        "cruiseCritic": "Leia avaliações de cruzeiros em"
+      }
+    }
+  }

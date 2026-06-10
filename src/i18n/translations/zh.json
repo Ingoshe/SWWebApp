@@ -1,0 +1,158 @@
+{
+    "nav": {
+      "home": "首页",
+      "monitors": "监控",
+      "aboutUI": "关于",
+      "articles": "文章",
+      "contact": "联系",
+      "login": "登录",
+      "signup": "注册",
+      "logout": "退出登录",
+      "searchPlaceholder": "搜索"
+    },
+    "hero": {
+      "ace": {
+        "eyebrow": "独家尊享的巅峰",
+        "headline": "只有少数精英才能持有这张卡。",
+        "body": "2026年精选王牌系列正式登场——每个等级都以清晰的标准和绝对精准为后盾。",
+        "cta": "探索王牌 ✦"
+      },
+      "queen": {
+        "eyebrow": "为精致而生",
+        "headline": "优雅不是给予的，而是赢得的。",
+        "body": "女王恩典系列颂扬那些以优雅领导的人——每一个细节都编织着玫瑰金和从容自信。",
+        "cta": "进入宫廷 ❧"
+      },
+      "king": {
+        "eyebrow": "无需置疑的统领",
+        "headline": "驾驭全场，把握时机。",
+        "body": "国王命令系列卓尔不凡——权威、简约，专为无需介绍的人而生。",
+        "cta": "登上王座 ♛"
+      }
+    },
+    "cards": {
+      "ace": {
+        "tier": "概念三",
+        "subtitle": "精选王牌",
+        "exclusiveAccess": "独家访问",
+        "playfulInteraction": "趣味互动",
+        "exploreNow": "立即探索",
+        "acesClarity": "王牌清晰",
+        "diamondTier": "钻石等级",
+        "crystalClarity": "水晶清晰",
+        "discover": "发现",
+        "apexMember": "顶级会员",
+        "limitlessAccess": "无限访问",
+        "joinNow": "立即加入",
+        "ultraSelect": "超级精选",
+        "sovereignAccess": "主权访问",
+        "activate": "激活"
+      },
+      "queen": {
+        "tier": "概念二",
+        "subtitle": "精致女王",
+        "premierMembership": "首席会员",
+        "modularGeometry": "模块几何",
+        "learnMore": "了解更多",
+        "queensGrace": "女王恩典",
+        "roseElite": "玫瑰精英",
+        "goldRefinement": "黄金精炼",
+        "explore": "探索",
+        "goldenCircle": "黄金圈",
+        "prestigeCollection": "尊贵系列",
+        "viewMore": "查看更多",
+        "curatedAccess": "精选访问",
+        "artisanTier": "工匠等级",
+        "getAccess": "获取访问"
+      },
+      "king": {
+        "tier": "概念一",
+        "subtitle": "权威国王",
+        "professionalSolution": "专业方案",
+        "elevatedMinimalism": "高端简约",
+        "viewDetails": "查看详情",
+        "kingsCommand": "国王命令",
+        "executiveSuite": "行政套房",
+        "commandControl": "指挥与控制",
+        "claimAccess": "获取访问",
+        "sovereignPlan": "主权计划",
+        "totalAuthority": "完全权威",
+        "ascend": "晋升",
+        "grandAuthority": "大权威",
+        "prestigePower": "尊贵权力",
+        "enter": "进入"
+      }
+    },
+    "interest": {
+      "ace": {
+        "heading": "以清晰发现",
+        "subheading": "为少数精英精心策划。",
+        "crystalSpaces": "水晶空间",
+        "precisionCraft": "精密工艺",
+        "aetherSky": "以太与天空",
+        "arcticEdge": "北极边缘"
+      },
+      "queen": {
+        "heading": "以优雅探索",
+        "subheading": "为精致而大胆的人手工挑选。",
+        "botanicalTrails": "植物小径",
+        "velvetDining": "丝绒餐饮",
+        "artsSalons": "艺术与沙龙",
+        "spaRetreat": "水疗度假"
+      },
+      "king": {
+        "heading": "统领你的世界",
+        "subheading": "在你选择的每个方向都有权威。",
+        "powerSport": "力量与运动",
+        "privateAviation": "私人航空",
+        "estateLand": "庄园与土地",
+        "navalSea": "海军与海洋"
+      }
+    },
+    "footer": {
+      "aboutUs": "关于本站",
+      "explore": "探索",
+      "doBusinessWithUs": "与我们合作",
+      "getTheApp": "获取应用",
+      "ourSites": "我们的网站",
+      "copyright": "© 2026 Site LLC 版权所有。",
+      "termsOfUse": "使用条款",
+      "privacyStatement": "隐私和Cookie声明",
+      "cookieConsent": "Cookie同意",
+      "howItWorks": "网站使用说明",
+      "contactUs": "联系我们",
+      "accessibilityStatement": "无障碍声明",
+      "readMore": "阅读更多",
+      "showLess": "收起",
+      "links": {
+        "aboutUs": "关于我们",
+        "press": "新闻",
+        "resourcesPolicies": "资源与政策",
+        "careers": "职业",
+        "investorRelations": "投资者关系",
+        "trustSafety": "信任与安全",
+        "contactUs": "联系我们",
+        "bugBounty": "漏洞悬赏计划",
+        "techBlog": "技术博客",
+        "writeReview": "撰写评论",
+        "addPlace": "添加地点",
+        "join": "加入",
+        "travelersChoice": "旅行者之选",
+        "helpCenter": "帮助中心",
+        "travelStories": "旅行故事",
+        "owners": "业主",
+        "businessAdvantage": "商业优势",
+        "sponsoredPlacements": "赞助位置",
+        "advertise": "与我们合作",
+        "contentAPI": "访问内容API",
+        "affiliate": "成为联盟伙伴",
+        "iphoneApp": "iPhone应用",
+        "androidApp": "Android应用"
+      },
+      "sites": {
+        "theFork": "通过以下网站预订最佳餐厅",
+        "viator": "通过以下网站预订游览和景点门票",
+        "cruiseCritic": "在以下网站阅读游轮评论"
+      }
+    }
+  }

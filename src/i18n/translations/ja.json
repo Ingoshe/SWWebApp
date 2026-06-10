@@ -1,0 +1,158 @@
+{
+    "nav": {
+      "home": "ホーム",
+      "monitors": "モニター",
+      "aboutUI": "概要",
+      "articles": "記事",
+      "contact": "お問い合わせ",
+      "login": "ログイン",
+      "signup": "新規登録",
+      "logout": "ログアウト",
+      "searchPlaceholder": "検索"
+    },
+    "hero": {
+      "ace": {
+        "eyebrow": "独占性の極み",
+        "headline": "選ばれし少数だけがこのカードを持つ。",
+        "body": "2026年セレクティブ・エースコレクション登場 — すべてのティアが水晶のような基準と絶対的な精度に支えられています。",
+        "cta": "エースを発見 ✦"
+      },
+      "queen": {
+        "eyebrow": "洗練された方のために",
+        "headline": "気品は与えられるものではない。勝ち取るものだ。",
+        "body": "クイーンズ・グレースコレクションは、優雅に導くすべての人を称えます — すべての細部がローズゴールドと静かな自信で織り上げられています。",
+        "cta": "宮廷へ入る ❧"
+      },
+      "king": {
+        "eyebrow": "疑いのない指揮",
+        "headline": "場を制する。瞬間を掌握する。",
+        "body": "キングズ・コマンドコレクションは際立つ — 権威的で、ミニマルで、紹介不要の方のために作られています。",
+        "cta": "王位を主張する ♛"
+      }
+    },
+    "cards": {
+      "ace": {
+        "tier": "コンセプト3",
+        "subtitle": "セレクティブ・エース",
+        "exclusiveAccess": "限定アクセス",
+        "playfulInteraction": "遊び心のある操作",
+        "exploreNow": "今すぐ探索",
+        "acesClarity": "エースの明晰さ",
+        "diamondTier": "ダイヤモンドティア",
+        "crystalClarity": "クリスタルの明晰さ",
+        "discover": "発見する",
+        "apexMember": "頂点メンバー",
+        "limitlessAccess": "無制限アクセス",
+        "joinNow": "今すぐ参加",
+        "ultraSelect": "ウルトラセレクト",
+        "sovereignAccess": "主権アクセス",
+        "activate": "有効化"
+      },
+      "queen": {
+        "tier": "コンセプト2",
+        "subtitle": "洗練されたクイーン",
+        "premierMembership": "プレミア会員",
+        "modularGeometry": "モジュラー幾何学",
+        "learnMore": "詳しく見る",
+        "queensGrace": "クイーンズ・グレース",
+        "roseElite": "ローズエリート",
+        "goldRefinement": "ゴールドの洗練",
+        "explore": "探索する",
+        "goldenCircle": "ゴールデンサークル",
+        "prestigeCollection": "プレステージコレクション",
+        "viewMore": "もっと見る",
+        "curatedAccess": "厳選アクセス",
+        "artisanTier": "職人ティア",
+        "getAccess": "アクセスを取得"
+      },
+      "king": {
+        "tier": "コンセプト1",
+        "subtitle": "権威あるキング",
+        "professionalSolution": "プロフェッショナルソリューション",
+        "elevatedMinimalism": "高度なミニマリズム",
+        "viewDetails": "詳細を見る",
+        "kingsCommand": "キングズ・コマンド",
+        "executiveSuite": "エグゼクティブスイート",
+        "commandControl": "指揮と統制",
+        "claimAccess": "アクセスを申請",
+        "sovereignPlan": "主権プラン",
+        "totalAuthority": "完全な権限",
+        "ascend": "昇る",
+        "grandAuthority": "大権限",
+        "prestigePower": "威信の力",
+        "enter": "入る"
+      }
+    },
+    "interest": {
+      "ace": {
+        "heading": "明晰さで発見する",
+        "subheading": "選ばれし少数のために精密に厳選。",
+        "crystalSpaces": "クリスタルスペース",
+        "precisionCraft": "精密な工芸",
+        "aetherSky": "エーテルと空",
+        "arcticEdge": "北極のエッジ"
+      },
+      "queen": {
+        "heading": "優雅に探索する",
+        "subheading": "洗練された大胆な方のために手選び。",
+        "botanicalTrails": "植物の小道",
+        "velvetDining": "ベルベットダイニング",
+        "artsSalons": "アートとサロン",
+        "spaRetreat": "スパとリトリート"
+      },
+      "king": {
+        "heading": "あなたの世界を指揮する",
+        "subheading": "あなたが選ぶすべての方向に権威を。",
+        "powerSport": "パワーとスポーツ",
+        "privateAviation": "プライベート航空",
+        "estateLand": "エステートと土地",
+        "navalSea": "海軍と海"
+      }
+    },
+    "footer": {
+      "aboutUs": "サイトについて",
+      "explore": "探索する",
+      "doBusinessWithUs": "ビジネスのご相談",
+      "getTheApp": "アプリを取得",
+      "ourSites": "関連サイト",
+      "copyright": "© 2026 Site LLC 全著作権所有。",
+      "termsOfUse": "利用規約",
+      "privacyStatement": "プライバシーとCookieに関する声明",
+      "cookieConsent": "Cookieの同意",
+      "howItWorks": "サイトの仕組み",
+      "contactUs": "お問い合わせ",
+      "accessibilityStatement": "アクセシビリティに関する声明",
+      "readMore": "続きを読む",
+      "showLess": "表示を減らす",
+      "links": {
+        "aboutUs": "私たちについて",
+        "press": "プレス",
+        "resourcesPolicies": "リソースとポリシー",
+        "careers": "採用情報",
+        "investorRelations": "投資家向け情報",
+        "trustSafety": "信頼と安全",
+        "contactUs": "お問い合わせ",
+        "bugBounty": "バグバウンティプログラム",
+        "techBlog": "テクノロジーブログ",
+        "writeReview": "レビューを書く",
+        "addPlace": "場所を追加",
+        "join": "参加する",
+        "travelersChoice": "トラベラーズチョイス",
+        "helpCenter": "ヘルプセンター",
+        "travelStories": "旅行ストーリー",
+        "owners": "オーナー",
+        "businessAdvantage": "ビジネスアドバンテージ",
+        "sponsoredPlacements": "スポンサードプレースメント",
+        "advertise": "広告掲載",
+        "contentAPI": "コンテンツAPIにアクセス",
+        "affiliate": "アフィリエイトになる",
+        "iphoneApp": "iPhoneアプリ",
+        "androidApp": "Androidアプリ"
+      },
+      "sites": {
+        "theFork": "最高のレストランを予約するには",
+        "viator": "ツアーと観光チケットを予約するには",
+        "cruiseCritic": "クルーズレビューを読むには"
+      }
+    }
+  }

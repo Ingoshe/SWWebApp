@@ -1,0 +1,158 @@
+{
+    "nav": {
+      "home": "Accueil",
+      "monitors": "Moniteurs",
+      "aboutUI": "À propos",
+      "articles": "Articles",
+      "contact": "Contact",
+      "login": "Connexion",
+      "signup": "S'inscrire",
+      "logout": "Déconnexion",
+      "searchPlaceholder": "Rechercher"
+    },
+    "hero": {
+      "ace": {
+        "eyebrow": "Le summum de l'exclusivité",
+        "headline": "Seuls les rares élus détiennent cette carte.",
+        "body": "La collection Selective Ace 2026 est arrivée — chaque niveau soutenu par des standards cristallins et une précision absolue.",
+        "cta": "Découvrir l'As ✦"
+      },
+      "queen": {
+        "eyebrow": "Conçu pour les raffinés",
+        "headline": "La grâce ne se donne pas. Elle se mérite.",
+        "body": "La collection Queen's Grace célèbre ceux qui dirigent avec élégance — chaque détail tissé d'or rose et de confiance tranquille.",
+        "cta": "Entrer à la Cour ❧"
+      },
+      "king": {
+        "eyebrow": "Commander sans question",
+        "headline": "Régner sur la salle. Posséder l'instant.",
+        "body": "La collection King's Command se démarque — autoritaire, minimale, conçue pour ceux qui n'ont pas besoin de présentation.",
+        "cta": "Réclamer le Trône ♛"
+      }
+    },
+    "cards": {
+      "ace": {
+        "tier": "CONCEPT 3",
+        "subtitle": "AS SÉLECTIF",
+        "exclusiveAccess": "ACCÈS EXCLUSIF",
+        "playfulInteraction": "Interaction Ludique",
+        "exploreNow": "EXPLORER",
+        "acesClarity": "CLARTÉ DE L'AS",
+        "diamondTier": "NIVEAU DIAMANT",
+        "crystalClarity": "Clarté Cristalline",
+        "discover": "DÉCOUVRIR",
+        "apexMember": "MEMBRE APEX",
+        "limitlessAccess": "Accès Illimité",
+        "joinNow": "REJOINDRE",
+        "ultraSelect": "ULTRA SÉLECT",
+        "sovereignAccess": "Accès Souverain",
+        "activate": "ACTIVER"
+      },
+      "queen": {
+        "tier": "CONCEPT 2",
+        "subtitle": "REINE RAFFINÉE",
+        "premierMembership": "ADHÉSION PREMIÈRE",
+        "modularGeometry": "Géométrie Modulaire",
+        "learnMore": "EN SAVOIR PLUS",
+        "queensGrace": "GRÂCE DE LA REINE",
+        "roseElite": "ÉLITE ROSÉE",
+        "goldRefinement": "Raffinement Doré",
+        "explore": "EXPLORER",
+        "goldenCircle": "CERCLE DORÉ",
+        "prestigeCollection": "Collection Prestige",
+        "viewMore": "VOIR PLUS",
+        "curatedAccess": "ACCÈS CURÉ",
+        "artisanTier": "Niveau Artisan",
+        "getAccess": "OBTENIR L'ACCÈS"
+      },
+      "king": {
+        "tier": "CONCEPT 1",
+        "subtitle": "ROI AUTORITAIRE",
+        "professionalSolution": "SOLUTION PROFESSIONNELLE",
+        "elevatedMinimalism": "Minimalisme Élevé",
+        "viewDetails": "VOIR LES DÉTAILS",
+        "kingsCommand": "COMMANDEMENT DU ROI",
+        "executiveSuite": "SUITE EXÉCUTIVE",
+        "commandControl": "Commandement & Contrôle",
+        "claimAccess": "RÉCLAMER L'ACCÈS",
+        "sovereignPlan": "PLAN SOUVERAIN",
+        "totalAuthority": "Autorité Totale",
+        "ascend": "MONTER",
+        "grandAuthority": "GRANDE AUTORITÉ",
+        "prestigePower": "Pouvoir Prestige",
+        "enter": "ENTRER"
+      }
+    },
+    "interest": {
+      "ace": {
+        "heading": "Découvrir par clarté",
+        "subheading": "Soigneusement sélectionné pour les rares élus.",
+        "crystalSpaces": "Espaces Cristallins",
+        "precisionCraft": "Artisanat de Précision",
+        "aetherSky": "Éther & Ciel",
+        "arcticEdge": "Bord Arctique"
+      },
+      "queen": {
+        "heading": "Explorer avec grâce",
+        "subheading": "Sélectionné à la main pour les raffinés et les audacieux.",
+        "botanicalTrails": "Sentiers Botaniques",
+        "velvetDining": "Dîner Velours",
+        "artsSalons": "Arts & Salons",
+        "spaRetreat": "Spa & Retraite"
+      },
+      "king": {
+        "heading": "Commander votre monde",
+        "subheading": "Autorité dans chaque direction que vous choisissez.",
+        "powerSport": "Puissance & Sport",
+        "privateAviation": "Aviation Privée",
+        "estateLand": "Domaine & Terres",
+        "navalSea": "Naval & Mer"
+      }
+    },
+    "footer": {
+      "aboutUs": "À propos du site",
+      "explore": "Explorer",
+      "doBusinessWithUs": "Faire des affaires avec nous",
+      "getTheApp": "Obtenir l'application",
+      "ourSites": "Nos sites",
+      "copyright": "© 2026 Site LLC Tous droits réservés.",
+      "termsOfUse": "Conditions d'utilisation",
+      "privacyStatement": "Déclaration de confidentialité et cookies",
+      "cookieConsent": "Consentement aux cookies",
+      "howItWorks": "Comment fonctionne le site",
+      "contactUs": "Nous contacter",
+      "accessibilityStatement": "Déclaration d'accessibilité",
+      "readMore": "Lire la suite",
+      "showLess": "Afficher moins",
+      "links": {
+        "aboutUs": "À propos de nous",
+        "press": "Presse",
+        "resourcesPolicies": "Ressources et politiques",
+        "careers": "Carrières",
+        "investorRelations": "Relations investisseurs",
+        "trustSafety": "Confiance & Sécurité",
+        "contactUs": "Nous contacter",
+        "bugBounty": "Programme Bug Bounty",
+        "techBlog": "Blog technologique",
+        "writeReview": "Écrire un avis",
+        "addPlace": "Ajouter un lieu",
+        "join": "Rejoindre",
+        "travelersChoice": "Choix des voyageurs",
+        "helpCenter": "Centre d'aide",
+        "travelStories": "Récits de voyage",
+        "owners": "Propriétaires",
+        "businessAdvantage": "Avantage commercial",
+        "sponsoredPlacements": "Placements sponsorisés",
+        "advertise": "Faire de la publicité",
+        "contentAPI": "Accéder à notre API de contenu",
+        "affiliate": "Devenir affilié",
+        "iphoneApp": "Application iPhone",
+        "androidApp": "Application Android"
+      },
+      "sites": {
+        "theFork": "Réservez les meilleurs restaurants avec",
+        "viator": "Réservez des visites et billets sur",
+        "cruiseCritic": "Lisez les avis de croisières sur"
+      }
+    }
+  }

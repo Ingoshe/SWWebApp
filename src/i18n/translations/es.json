@@ -1,0 +1,158 @@
+{
+    "nav": {
+      "home": "Inicio",
+      "monitors": "Monitores",
+      "aboutUI": "Acerca de",
+      "articles": "Artículos",
+      "contact": "Contacto",
+      "login": "Iniciar sesión",
+      "signup": "Registrarse",
+      "logout": "Cerrar sesión",
+      "searchPlaceholder": "Buscar"
+    },
+    "hero": {
+      "ace": {
+        "eyebrow": "La cúspide de la exclusividad",
+        "headline": "Solo los pocos selectos tienen esta carta.",
+        "body": "La colección Selective Ace 2026 ya está aquí — cada nivel respaldado por estándares cristalinos y precisión absoluta.",
+        "cta": "Descubrir el As ✦"
+      },
+      "queen": {
+        "eyebrow": "Diseñado para los refinados",
+        "headline": "La gracia no se da. Se gana.",
+        "body": "La colección Queen's Grace celebra a quienes lideran con elegancia — cada detalle tejido en oro rosa y confianza tranquila.",
+        "cta": "Entrar a la Corte ❧"
+      },
+      "king": {
+        "eyebrow": "Manda sin cuestionamiento",
+        "headline": "Domina la sala. Posee el momento.",
+        "body": "La colección King's Command se distingue — autoritaria, mínima y construida para quienes no necesitan presentación.",
+        "cta": "Reclamar el Trono ♛"
+      }
+    },
+    "cards": {
+      "ace": {
+        "tier": "CONCEPTO 3",
+        "subtitle": "AS SELECTIVO",
+        "exclusiveAccess": "ACCESO EXCLUSIVO",
+        "playfulInteraction": "Interacción Lúdica",
+        "exploreNow": "EXPLORAR",
+        "acesClarity": "CLARIDAD DEL AS",
+        "diamondTier": "NIVEL DIAMANTE",
+        "crystalClarity": "Claridad Cristalina",
+        "discover": "DESCUBRIR",
+        "apexMember": "MIEMBRO APEX",
+        "limitlessAccess": "Acceso Ilimitado",
+        "joinNow": "UNIRSE",
+        "ultraSelect": "ULTRA SELECTO",
+        "sovereignAccess": "Acceso Soberano",
+        "activate": "ACTIVAR"
+      },
+      "queen": {
+        "tier": "CONCEPTO 2",
+        "subtitle": "REINA REFINADA",
+        "premierMembership": "MEMBRESÍA PREMIER",
+        "modularGeometry": "Geometría Modular",
+        "learnMore": "SABER MÁS",
+        "queensGrace": "GRACIA DE LA REINA",
+        "roseElite": "ÉLITE ROSADA",
+        "goldRefinement": "Refinamiento Dorado",
+        "explore": "EXPLORAR",
+        "goldenCircle": "CÍRCULO DORADO",
+        "prestigeCollection": "Colección Prestigio",
+        "viewMore": "VER MÁS",
+        "curatedAccess": "ACCESO CURADO",
+        "artisanTier": "Nivel Artesano",
+        "getAccess": "OBTENER ACCESO"
+      },
+      "king": {
+        "tier": "CONCEPTO 1",
+        "subtitle": "REY AUTORITATIVO",
+        "professionalSolution": "SOLUCIÓN PROFESIONAL",
+        "elevatedMinimalism": "Minimalismo Elevado",
+        "viewDetails": "VER DETALLES",
+        "kingsCommand": "MANDO DEL REY",
+        "executiveSuite": "SUITE EJECUTIVA",
+        "commandControl": "Mando & Control",
+        "claimAccess": "RECLAMAR ACCESO",
+        "sovereignPlan": "PLAN SOBERANO",
+        "totalAuthority": "Autoridad Total",
+        "ascend": "ASCENDER",
+        "grandAuthority": "GRAN AUTORIDAD",
+        "prestigePower": "Poder Prestigio",
+        "enter": "ENTRAR"
+      }
+    },
+    "interest": {
+      "ace": {
+        "heading": "Descubrir por claridad",
+        "subheading": "Seleccionado con precisión para los pocos selectos.",
+        "crystalSpaces": "Espacios de Cristal",
+        "precisionCraft": "Artesanía de Precisión",
+        "aetherSky": "Éter & Cielo",
+        "arcticEdge": "Borde Ártico"
+      },
+      "queen": {
+        "heading": "Explorar con gracia",
+        "subheading": "Elegido a mano para los refinados y audaces.",
+        "botanicalTrails": "Senderos Botánicos",
+        "velvetDining": "Cena de Terciopelo",
+        "artsSalons": "Artes & Salones",
+        "spaRetreat": "Spa & Retiro"
+      },
+      "king": {
+        "heading": "Comanda tu mundo",
+        "subheading": "Autoridad en cada dirección que elijas.",
+        "powerSport": "Poder & Deporte",
+        "privateAviation": "Aviación Privada",
+        "estateLand": "Finca & Tierra",
+        "navalSea": "Naval & Mar"
+      }
+    },
+    "footer": {
+      "aboutUs": "Acerca del sitio",
+      "explore": "Explorar",
+      "doBusinessWithUs": "Haz negocios con nosotros",
+      "getTheApp": "Obtener la aplicación",
+      "ourSites": "Nuestros sitios",
+      "copyright": "© 2026 Site LLC Todos los derechos reservados.",
+      "termsOfUse": "Términos de uso",
+      "privacyStatement": "Declaración de privacidad y cookies",
+      "cookieConsent": "Consentimiento de cookies",
+      "howItWorks": "Cómo funciona el sitio",
+      "contactUs": "Contáctenos",
+      "accessibilityStatement": "Declaración de accesibilidad",
+      "readMore": "Leer más",
+      "showLess": "Mostrar menos",
+      "links": {
+        "aboutUs": "Sobre nosotros",
+        "press": "Prensa",
+        "resourcesPolicies": "Recursos y políticas",
+        "careers": "Carreras",
+        "investorRelations": "Relaciones con inversores",
+        "trustSafety": "Confianza & Seguridad",
+        "contactUs": "Contáctenos",
+        "bugBounty": "Programa Bug Bounty",
+        "techBlog": "Blog tecnológico",
+        "writeReview": "Escribir una reseña",
+        "addPlace": "Agregar un lugar",
+        "join": "Unirse",
+        "travelersChoice": "Elección de los viajeros",
+        "helpCenter": "Centro de ayuda",
+        "travelStories": "Historias de viaje",
+        "owners": "Propietarios",
+        "businessAdvantage": "Ventaja comercial",
+        "sponsoredPlacements": "Colocaciones patrocinadas",
+        "advertise": "Anunciarse con nosotros",
+        "contentAPI": "Acceder a nuestra API de contenido",
+        "affiliate": "Convertirse en afiliado",
+        "iphoneApp": "Aplicación iPhone",
+        "androidApp": "Aplicación Android"
+      },
+      "sites": {
+        "theFork": "Reserve los mejores restaurantes con",
+        "viator": "Reserve tours y entradas de atracciones en",
+        "cruiseCritic": "Lea reseñas de cruceros en"
+      }
+    }
+  }

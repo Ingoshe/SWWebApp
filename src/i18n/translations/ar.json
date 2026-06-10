@@ -1,0 +1,158 @@
+{
+    "nav": {
+      "home": "الرئيسية",
+      "monitors": "الشاشات",
+      "aboutUI": "حول",
+      "articles": "المقالات",
+      "contact": "اتصل بنا",
+      "login": "تسجيل الدخول",
+      "signup": "إنشاء حساب",
+      "logout": "تسجيل الخروج",
+      "searchPlaceholder": "بحث"
+    },
+    "hero": {
+      "ace": {
+        "eyebrow": "قمة الحصرية",
+        "headline": "القلة المختارة فقط تمتلك هذه البطاقة.",
+        "body": "مجموعة Selective Ace 2026 هنا — كل مستوى مدعوم بمعايير بلورية ودقة مطلقة.",
+        "cta": "اكتشف الآس ✦"
+      },
+      "queen": {
+        "eyebrow": "صُمم للمتذوقين",
+        "headline": "الرقي لا يُمنح. بل يُكتسب.",
+        "body": "مجموعة Queen's Grace تحتفي بمن يقودون بأناقة — كل تفصيل منسوج بالذهب الوردي والثقة الهادئة.",
+        "cta": "ادخل القصر ❧"
+      },
+      "king": {
+        "eyebrow": "السيطرة بلا تساؤل",
+        "headline": "اسطرِ المكان. امتلك اللحظة.",
+        "body": "مجموعة King's Command تتميز — موثوقة، بسيطة، مصممة لمن لا يحتاجون إلى تعريف.",
+        "cta": "المطالبة بالعرش ♛"
+      }
+    },
+    "cards": {
+      "ace": {
+        "tier": "المفهوم الثالث",
+        "subtitle": "الآس الانتقائي",
+        "exclusiveAccess": "وصول حصري",
+        "playfulInteraction": "تفاعل مرح",
+        "exploreNow": "استكشف الآن",
+        "acesClarity": "وضوح الآس",
+        "diamondTier": "المستوى الماسي",
+        "crystalClarity": "وضوح كريستالي",
+        "discover": "اكتشف",
+        "apexMember": "عضو Apex",
+        "limitlessAccess": "وصول غير محدود",
+        "joinNow": "انضم الآن",
+        "ultraSelect": "منتقى للغاية",
+        "sovereignAccess": "وصول سيادي",
+        "activate": "تفعيل"
+      },
+      "queen": {
+        "tier": "المفهوم الثاني",
+        "subtitle": "الملكة المصقولة",
+        "premierMembership": "عضوية مميزة",
+        "modularGeometry": "هندسة معيارية",
+        "learnMore": "اعرف المزيد",
+        "queensGrace": "رقي الملكة",
+        "roseElite": "النخبة الوردية",
+        "goldRefinement": "التصفية الذهبية",
+        "explore": "استكشف",
+        "goldenCircle": "الدائرة الذهبية",
+        "prestigeCollection": "مجموعة المكانة",
+        "viewMore": "عرض المزيد",
+        "curatedAccess": "وصول منتقى",
+        "artisanTier": "مستوى الحرفيين",
+        "getAccess": "احصل على الوصول"
+      },
+      "king": {
+        "tier": "المفهوم الأول",
+        "subtitle": "الملك الموثوق",
+        "professionalSolution": "حل احترافي",
+        "elevatedMinimalism": "بساطة راقية",
+        "viewDetails": "عرض التفاصيل",
+        "kingsCommand": "أمر الملك",
+        "executiveSuite": "جناح تنفيذي",
+        "commandControl": "القيادة والسيطرة",
+        "claimAccess": "المطالبة بالوصول",
+        "sovereignPlan": "الخطة السيادية",
+        "totalAuthority": "سلطة كاملة",
+        "ascend": "الصعود",
+        "grandAuthority": "السلطة العليا",
+        "prestigePower": "قوة المكانة",
+        "enter": "دخول"
+      }
+    },
+    "interest": {
+      "ace": {
+        "heading": "اكتشف بوضوح",
+        "subheading": "مُختار بدقة للقلة المختارة.",
+        "crystalSpaces": "الفضاءات الكريستالية",
+        "precisionCraft": "الحرفية الدقيقة",
+        "aetherSky": "الأثير والسماء",
+        "arcticEdge": "الحافة القطبية"
+      },
+      "queen": {
+        "heading": "استكشف بأناقة",
+        "subheading": "مختار يدوياً للمتذوقين والجريئين.",
+        "botanicalTrails": "المسارات النباتية",
+        "velvetDining": "المائدة المخملية",
+        "artsSalons": "الفنون والصالونات",
+        "spaRetreat": "السبا والاسترخاء"
+      },
+      "king": {
+        "heading": "تحكم في عالمك",
+        "subheading": "السلطة في كل اتجاه تختاره.",
+        "powerSport": "القوة والرياضة",
+        "privateAviation": "الطيران الخاص",
+        "estateLand": "العقارات والأراضي",
+        "navalSea": "البحرية والبحر"
+      }
+    },
+    "footer": {
+      "aboutUs": "حول الموقع",
+      "explore": "استكشف",
+      "doBusinessWithUs": "تعامل معنا تجارياً",
+      "getTheApp": "احصل على التطبيق",
+      "ourSites": "مواقعنا",
+      "copyright": "© 2026 Site LLC جميع الحقوق محفوظة.",
+      "termsOfUse": "شروط الاستخدام",
+      "privacyStatement": "سياسة الخصوصية وملفات تعريف الارتباط",
+      "cookieConsent": "الموافقة على ملفات تعريف الارتباط",
+      "howItWorks": "كيف يعمل الموقع",
+      "contactUs": "اتصل بنا",
+      "accessibilityStatement": "بيان إمكانية الوصول",
+      "readMore": "اقرأ المزيد",
+      "showLess": "إظهار أقل",
+      "links": {
+        "aboutUs": "من نحن",
+        "press": "الصحافة",
+        "resourcesPolicies": "الموارد والسياسات",
+        "careers": "الوظائف",
+        "investorRelations": "علاقات المستثمرين",
+        "trustSafety": "الثقة والسلامة",
+        "contactUs": "اتصل بنا",
+        "bugBounty": "برنامج مكافأة الأخطاء",
+        "techBlog": "المدونة التقنية",
+        "writeReview": "كتابة مراجعة",
+        "addPlace": "إضافة مكان",
+        "join": "انضم",
+        "travelersChoice": "اختيار المسافرين",
+        "helpCenter": "مركز المساعدة",
+        "travelStories": "قصص السفر",
+        "owners": "الملاك",
+        "businessAdvantage": "الميزة التجارية",
+        "sponsoredPlacements": "المواضع المموّلة",
+        "advertise": "الإعلان معنا",
+        "contentAPI": "الوصول إلى واجهة برمجة المحتوى",
+        "affiliate": "كن شريكاً",
+        "iphoneApp": "تطبيق iPhone",
+        "androidApp": "تطبيق Android"
+      },
+      "sites": {
+        "theFork": "احجز أفضل المطاعم مع",
+        "viator": "احجز الجولات وتذاكر المعالم على",
+        "cruiseCritic": "اقرأ مراجعات الرحلات البحرية على"
+      }
+    }
+  }
