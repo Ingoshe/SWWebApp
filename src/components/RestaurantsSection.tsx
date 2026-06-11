@@ -1,9 +1,7 @@
-import { useState, useEffect, useCallback, useMemo } from "react";
+import { useState, useEffect, useCallback, useMemo,} from "react";
 
 /* ── Resolve API key once at module level so it is stable across renders ── */
-const _rawKey = import.meta.env.VITE_GOOGLE_PLACES_API_KEY as
-  | string
-  | undefined;
+const _rawKey = import.meta.env.VITE_GOOGLE_PLACES_API_KEY as string | undefined;
 const GOOGLE_API_KEY: string | null =
   _rawKey && _rawKey !== "undefined" && _rawKey.trim() !== ""
     ? _rawKey.trim()
@@ -27,70 +25,49 @@ interface CityCoords {
 }
 
 interface RestaurantsSectionProps {
-  cityId: string;
-  cityName: string;
-  coords: CityCoords | null;
-  theme: Theme;
+  cityId:    string;
+  cityName:  string;
+  coords:    CityCoords | null;
+  theme:     Theme;
 }
 
 /* ─────────────────────────────────────────────────────────
    Constants
 ───────────────────────────────────────────────────────── */
 const CUISINE_FILTERS: CuisineFilter[] = [
-  "All",
-  "Asian",
-  "Japanese",
-  "Chinese",
-  "Korean",
-  "Thai",
-  "Indian",
-  "Middle Eastern",
-  "Mediterranean",
-  "Greek",
-  "Italian",
-  "French",
-  "Mexican",
-  "American",
-  "African",
-  "Caribbean",
-  "Fusion",
-  "Vegetarian/Vegan",
-  "Seafood",
+  "All", "Asian", "Japanese", "Chinese", "Korean", "Thai",
+  "Indian", "Middle Eastern", "Mediterranean", "Greek",
+  "Italian", "French", "Mexican", "American", "African",
+  "Caribbean", "Fusion", "Vegetarian/Vegan", "Seafood",
 ];
 
 const CUISINE_KEYWORDS: Partial<Record<CuisineFilter, string[]>> = {
-  Asian: ["asian", "pan asian"],
-  Japanese: ["japanese", "sushi", "ramen"],
-  Chinese: ["chinese", "dim sum", "cantonese"],
-  Korean: ["korean", "bbq"],
-  Thai: ["thai"],
-  Indian: ["indian", "curry"],
-  "Middle Eastern": [
-    "middle eastern",
-    "lebanese",
-    "turkish",
-    "persian",
-    "arabic",
-  ],
-  Mediterranean: ["mediterranean"],
-  Greek: ["greek"],
-  Italian: ["italian", "pizza", "pasta"],
-  French: ["french", "bistro", "brasserie"],
-  Mexican: ["mexican", "tacos", "tex-mex"],
-  American: ["american", "burger", "diner"],
-  African: ["african"],
-  Caribbean: ["caribbean"],
-  Fusion: ["fusion"],
+  Asian:              ["asian", "pan asian"],
+  Japanese:           ["japanese", "sushi", "ramen"],
+  Chinese:            ["chinese", "dim sum", "cantonese"],
+  Korean:             ["korean", "bbq"],
+  Thai:               ["thai"],
+  Indian:             ["indian", "curry"],
+  "Middle Eastern":   ["middle eastern", "lebanese", "turkish", "persian", "arabic"],
+  Mediterranean:      ["mediterranean"],
+  Greek:              ["greek"],
+  Italian:            ["italian", "pizza", "pasta"],
+  French:             ["french", "bistro", "brasserie"],
+  Mexican:            ["mexican", "tacos", "tex-mex"],
+  American:           ["american", "burger", "diner"],
+  African:            ["african"],
+  Caribbean:          ["caribbean"],
+  Fusion:             ["fusion"],
   "Vegetarian/Vegan": ["vegetarian", "vegan", "plant"],
-  Seafood: ["seafood", "fish"],
+  Seafood:            ["seafood", "fish"],
 };
 
 const CACHE_TTL_MS = 30 * 60 * 1000; // 30 minutes
 
 const THEME_ACCENT: Record<Theme, { pill: string; pillText: string }> = {
-  ace: { pill: "#1a3060", pillText: "#e8f0ff" },
-  queen: { pill: "#8a5a35", pillText: "#fff" },
-  king: { pill: "#c8a84b", pillText: "#141008" },
+  ace:   { pill: "#1a3060", pillText: "#e8f0ff" },
+  queen: { pill: "#8a5a35", pillText: "#fff"    },
+  king:  { pill: "#c8a84b", pillText: "#141008" },
 };
 
 /* ─────────────────────────────────────────────────────────
@@ -200,21 +177,13 @@ function readCache(key: string): GooglePlace[] | null {
     const raw = sessionStorage.getItem(key);
     if (!raw) return null;
     const { data, ts } = JSON.parse(raw) as { data: GooglePlace[]; ts: number };
-    if (Date.now() - ts > CACHE_TTL_MS) {
-      sessionStorage.removeItem(key);
-      return null;
-    }
+    if (Date.now() - ts > CACHE_TTL_MS) { sessionStorage.removeItem(key); return null; }
     return data;
-  } catch {
-    return null;
-  }
+  } catch { return null; }
 }
 function writeCache(key: string, data: GooglePlace[]): void {
-  try {
-    sessionStorage.setItem(key, JSON.stringify({ data, ts: Date.now() }));
-  } catch {
-    /* quota exceeded */
-  }
+  try { sessionStorage.setItem(key, JSON.stringify({ data, ts: Date.now() })); }
+  catch { /* quota exceeded */ }
 }
 
 /* ─────────────────────────────────────────────────────────
@@ -227,9 +196,7 @@ function matchesCuisine(place: GooglePlace, filter: CuisineFilter): boolean {
     place.cuisineType ?? "",
     place.primaryTypeDisplayName?.text ?? "",
     place.displayName.text,
-  ]
-    .join(" ")
-    .toLowerCase();
+  ].join(" ").toLowerCase();
   return keywords.some((kw) => searchIn.includes(kw));
 }
 
@@ -237,25 +204,22 @@ function matchesCuisine(place: GooglePlace, filter: CuisineFilter): boolean {
    Main component
 ───────────────────────────────────────────────────────── */
 export default function RestaurantsSection({
-  cityId,
-  cityName,
-  coords,
-  theme,
+  cityId, cityName, coords, theme,
 }: RestaurantsSectionProps) {
-  const [allPlaces, setAllPlaces] = useState<GooglePlace[]>([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
-  const [isFallback, setIsFallback] = useState(false);
+  const [allPlaces,    setAllPlaces]    = useState<GooglePlace[]>([]);
+  const [loading,      setLoading]      = useState(false);
+  const [error,        setError]        = useState<string | null>(null);
+  const [,   setIsFallback]   = useState(false);
 
   /* Filter state */
-  const [cuisine, setCuisine] = useState<CuisineFilter>("All");
-  const [minRating, setMinRating] = useState<RatingFilter>("any");
-  const [priceFilter, setPriceFilter] = useState<PriceFilter>("Any");
-  const [openNow, setOpenNow] = useState(false);
-  const [sortBy, setSortBy] = useState<SortRestaurants>("relevance");
+  const [cuisine,    setCuisine]    = useState<CuisineFilter>("All");
+  const [minRating,  setMinRating]  = useState<RatingFilter>("any");
+  const [priceFilter,setPriceFilter]= useState<PriceFilter>("Any");
+  const [openNow,    setOpenNow]    = useState(false);
+  const [sortBy,     setSortBy]     = useState<SortRestaurants>("relevance");
 
   const apiKey = GOOGLE_API_KEY;
-  const accent = THEME_ACCENT[theme];
+  const accent  = THEME_ACCENT[theme];
 
   /* ── Fetch from Google Places API ── */
   const fetchRestaurants = useCallback(async () => {
@@ -275,11 +239,8 @@ export default function RestaurantsSection({
     }
 
     const cacheKey = getCacheKey(cityId, "All"); // cache full set, filter client-side
-    const cached = readCache(cacheKey);
-    if (cached) {
-      setAllPlaces(cached);
-      return;
-    }
+    const cached   = readCache(cacheKey);
+    if (cached) { setAllPlaces(cached); return; }
 
     setLoading(true);
     setError(null);
@@ -291,8 +252,8 @@ export default function RestaurantsSection({
         {
           method: "POST",
           headers: {
-            "Content-Type": "application/json",
-            "X-Goog-Api-Key": apiKey,
+            "Content-Type":    "application/json",
+            "X-Goog-Api-Key":  apiKey,
             "X-Goog-FieldMask": [
               "places.id",
               "places.displayName",
@@ -320,10 +281,7 @@ export default function RestaurantsSection({
         }
       );
 
-      if (!res.ok)
-        throw new Error(
-          `Google Places API error: ${res.status} ${res.statusText}`
-        );
+      if (!res.ok) throw new Error(`Google Places API error: ${res.status} ${res.statusText}`);
 
       const json: GooglePlacesResponse = await res.json();
       const places = (json.places ?? []).map((p) => ({
@@ -340,9 +298,7 @@ export default function RestaurantsSection({
     }
   }, [apiKey, coords, cityId]);
 
-  useEffect(() => {
-    fetchRestaurants();
-  }, [fetchRestaurants]);
+  useEffect(() => { fetchRestaurants(); }, [fetchRestaurants]);
 
   /* ── Client-side filtering ── */
   const filtered = useMemo(() => {
@@ -367,9 +323,7 @@ export default function RestaurantsSection({
     if (sortBy === "rating") {
       results.sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0));
     } else if (sortBy === "reviews") {
-      results.sort(
-        (a, b) => (b.userRatingCount ?? 0) - (a.userRatingCount ?? 0)
-      );
+      results.sort((a, b) => (b.userRatingCount ?? 0) - (a.userRatingCount ?? 0));
     }
 
     return results;
@@ -378,35 +332,24 @@ export default function RestaurantsSection({
   /* ── Pill style helper ── */
   const pill = (active: boolean): React.CSSProperties => ({
     fontFamily: "'DM Sans', sans-serif",
-    fontSize: 11,
-    fontWeight: 600,
-    letterSpacing: "0.04em",
-    borderRadius: 20,
-    padding: "5px 13px",
-    cursor: "pointer",
+    fontSize: 11, fontWeight: 600, letterSpacing: "0.04em",
+    borderRadius: 20, padding: "5px 13px", cursor: "pointer",
     border: "1.5px solid transparent",
     transition: "all 0.18s",
-    background: active ? accent.pill : "rgba(0,0,0,0.05)",
-    color: active ? accent.pillText : "#555",
+    background:  active ? accent.pill : "rgba(0,0,0,0.05)",
+    color:       active ? accent.pillText : "#555",
     borderColor: active ? "transparent" : "rgba(0,0,0,0.08)",
-    whiteSpace: "nowrap" as const,
+    whiteSpace:  "nowrap" as const,
   });
 
   const selectStyle: React.CSSProperties = {
     fontFamily: "'DM Sans', sans-serif",
-    fontSize: 12,
-    fontWeight: 500,
-    color: "#333",
-    background: "#fff",
-    border: "1.5px solid rgba(0,0,0,0.12)",
-    borderRadius: 10,
-    padding: "7px 32px 7px 12px",
-    appearance: "none",
-    cursor: "pointer",
-    outline: "none",
+    fontSize: 12, fontWeight: 500, color: "#333",
+    background: "#fff", border: "1.5px solid rgba(0,0,0,0.12)",
+    borderRadius: 10, padding: "7px 32px 7px 12px",
+    appearance: "none", cursor: "pointer", outline: "none",
     backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23666' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E")`,
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "right 10px center",
+    backgroundRepeat: "no-repeat", backgroundPosition: "right 10px center",
   };
 
   return (
@@ -420,7 +363,7 @@ export default function RestaurantsSection({
         .rs-centre {
           max-width: 960px;
           margin: 0 auto;
-          padding: 0 40px 80px; 
+          padding: 0 40px 80px;
         }
 
         .rs-heading-row {
@@ -434,12 +377,7 @@ export default function RestaurantsSection({
         }
         .rs-meta { font-size: 12px; color: #aaa; }
 
-        .rs-fallback-notice {
-          font-size: 12px; color: #f5a623;
-          background: #fffbf0; border: 1px solid rgba(245,166,35,0.25);
-          border-radius: 8px; padding: 8px 14px; margin-bottom: 16px;
-          display: inline-block;
-        }
+
 
         .rs-filter-bar {
           display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px;
@@ -503,133 +441,112 @@ export default function RestaurantsSection({
 
       <div className="rs-root">
         <div className="rs-centre">
-          <div className="rs-divider" />
+        <div className="rs-divider" />
 
-          <div className="rs-heading-row">
-            <h2 className="rs-heading">
-              Restaurants {cityName ? `in ${cityName}` : ""}
-            </h2>
-            {!loading && !error && (
-              <span className="rs-meta">
-                {filtered.length} of {allPlaces.length} restaurant
-                {allPlaces.length !== 1 ? "s" : ""}
-              </span>
-            )}
-          </div>
-
-          {isFallback && (
-            <div className="rs-fallback-notice">
-              ℹ️ Showing sample restaurants — add VITE_GOOGLE_PLACES_API_KEY to
-              .env for live results
-            </div>
-          )}
-
-          {/* Filter bar */}
-          <div className="rs-filter-bar">
-            {/* Cuisine */}
-            <div className="rs-filter-row">
-              <span className="rs-filter-label">Cuisine</span>
-              {CUISINE_FILTERS.map((c) => (
-                <button
-                  key={c}
-                  style={pill(cuisine === c)}
-                  onClick={() => setCuisine(c)}
-                >
-                  {c}
-                </button>
-              ))}
-            </div>
-
-            {/* Rating + Price + Open + Sort */}
-            <div className="rs-filter-row">
-              <span className="rs-filter-label">Rating</span>
-              {(["any", "3.5", "4.0", "4.5"] as RatingFilter[]).map((r) => (
-                <button
-                  key={r}
-                  style={pill(minRating === r)}
-                  onClick={() => setMinRating(r)}
-                >
-                  {r === "any" ? "Any" : `${r}★+`}
-                </button>
-              ))}
-
-              <span className="rs-filter-label" style={{ marginLeft: 8 }}>
-                Price
-              </span>
-              {(["Any", "$", "$$", "$$$", "$$$$"] as PriceFilter[]).map((p) => (
-                <button
-                  key={p}
-                  style={pill(priceFilter === p)}
-                  onClick={() => setPriceFilter(p)}
-                >
-                  {p}
-                </button>
-              ))}
-
-              <div
-                className={`rs-toggle${openNow ? " active" : ""}`}
-                onClick={() => setOpenNow((v) => !v)}
-              >
-                <span className="rs-toggle-dot" />
-                Open Now
-              </div>
-
-              <select
-                value={sortBy}
-                onChange={(e) => setSortBy(e.target.value as SortRestaurants)}
-                style={{ ...selectStyle, marginLeft: "auto" }}
-              >
-                <option value="relevance">Sort: Relevance</option>
-                <option value="rating">Highest Rated</option>
-                <option value="reviews">Most Reviewed</option>
-              </select>
-            </div>
-          </div>
-
-          {/* Error */}
-          {error && (
-            <div className="rs-error">
-              <span>⚠️ {error}</span>
-              <button className="rs-retry" onClick={fetchRestaurants}>
-                Retry
-              </button>
-            </div>
-          )}
-
-          {/* Loading */}
-          {loading && (
-            <div className="rs-grid">
-              {Array.from({ length: 6 }).map((_, i) => (
-                <RestaurantCardSkeleton key={i} />
-              ))}
-            </div>
-          )}
-
-          {/* Empty */}
-          {!loading && !error && filtered.length === 0 && (
-            <div className="rs-empty">
-              <span className="rs-empty-icon">🍽️</span>
-              No restaurants match your current filters.
-              <br />
-              Try adjusting cuisine type, rating, or price range.
-            </div>
-          )}
-
-          {/* Results */}
-          {!loading && !error && filtered.length > 0 && (
-            <div className="rs-grid">
-              {filtered.map((place) => (
-                <RestaurantCard
-                  key={place.id}
-                  place={place}
-                  theme={theme}
-                  apiKey={apiKey ?? undefined}
-                />
-              ))}
-            </div>
+        <div className="rs-heading-row">
+          <h2 className="rs-heading">
+            Restaurants {cityName ? `in ${cityName}` : ""}
+          </h2>
+          {!loading && !error && (
+            <span className="rs-meta">
+              {filtered.length} of {allPlaces.length} restaurant
+              {allPlaces.length !== 1 ? "s" : ""}
+            </span>
           )}
         </div>
-        {/* end rs-centre */}
+
+
+
+        {/* Filter bar */}
+        <div className="rs-filter-bar">
+
+          {/* Cuisine */}
+          <div className="rs-filter-row">
+            <span className="rs-filter-label">Cuisine</span>
+            {CUISINE_FILTERS.map((c) => (
+              <button key={c} style={pill(cuisine === c)} onClick={() => setCuisine(c)}>
+                {c}
+              </button>
+            ))}
+          </div>
+
+          {/* Rating + Price + Open + Sort */}
+          <div className="rs-filter-row">
+            <span className="rs-filter-label">Rating</span>
+            {(["any", "3.5", "4.0", "4.5"] as RatingFilter[]).map((r) => (
+              <button key={r} style={pill(minRating === r)} onClick={() => setMinRating(r)}>
+                {r === "any" ? "Any" : `${r}★+`}
+              </button>
+            ))}
+
+            <span className="rs-filter-label" style={{ marginLeft: 8 }}>Price</span>
+            {(["Any", "$", "$$", "$$$", "$$$$"] as PriceFilter[]).map((p) => (
+              <button key={p} style={pill(priceFilter === p)} onClick={() => setPriceFilter(p)}>
+                {p}
+              </button>
+            ))}
+
+            <div
+              className={`rs-toggle${openNow ? " active" : ""}`}
+              onClick={() => setOpenNow((v) => !v)}
+            >
+              <span className="rs-toggle-dot" />
+              Open Now
+            </div>
+
+            <select
+              value={sortBy}
+              onChange={(e) => setSortBy(e.target.value as SortRestaurants)}
+              style={{ ...selectStyle, marginLeft: "auto" }}
+            >
+              <option value="relevance">Sort: Relevance</option>
+              <option value="rating">Highest Rated</option>
+              <option value="reviews">Most Reviewed</option>
+            </select>
+          </div>
+        </div>
+
+        {/* Error */}
+        {error && (
+          <div className="rs-error">
+            <span>⚠️ {error}</span>
+            <button className="rs-retry" onClick={fetchRestaurants}>Retry</button>
+          </div>
+        )}
+
+        {/* Loading */}
+        {loading && (
+          <div className="rs-grid">
+            {Array.from({ length: 6 }).map((_, i) => (
+              <RestaurantCardSkeleton key={i} />
+            ))}
+          </div>
+        )}
+
+        {/* Empty */}
+        {!loading && !error && filtered.length === 0 && (
+          <div className="rs-empty">
+            <span className="rs-empty-icon">🍽️</span>
+            No restaurants match your current filters.
+            <br />
+            Try adjusting cuisine type, rating, or price range.
+          </div>
+        )}
+
+        {/* Results */}
+        {!loading && !error && filtered.length > 0 && (
+          <div className="rs-grid">
+            {filtered.map((place) => (
+              <RestaurantCard
+                key={place.id}
+                place={place}
+                theme={theme}
+                apiKey={apiKey}
+              />
+            ))}
+          </div>
+        )}
+        </div>{/* end rs-centre */}
       </div>
     </>
   );

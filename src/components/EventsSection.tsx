@@ -169,6 +169,12 @@ export default function EventsSection({ cityName, countryCode, theme }: EventsSe
 
         .es-root { margin-top: 56px; }
 
+        .es-centre {
+          max-width: 960px;
+          margin: 0 auto;
+          padding: 0 40px 80px;
+        }
+
         .es-heading-row {
           display: flex; align-items: baseline;
           justify-content: space-between;
@@ -193,7 +199,7 @@ export default function EventsSection({ cityName, countryCode, theme }: EventsSe
           display: grid;
           grid-template-columns: repeat(3, 280px);
           gap: 20px;
-          justify-content: start;
+          justify-content: center;
         }
 
         .es-empty {
@@ -222,12 +228,16 @@ export default function EventsSection({ cityName, countryCode, theme }: EventsSe
         @media (max-width: 960px) {
           .es-grid { grid-template-columns: repeat(2, 280px); }
         }
+        @media (max-width: 768px) {
+          .es-centre { padding: 0 20px 60px; }
+        }
         @media (max-width: 480px) {
           .es-grid { grid-template-columns: 1fr; }
         }
       `}</style>
 
       <div className="es-root">
+        <div className="es-centre">
         <div className="es-divider" />
 
         <div className="es-heading-row">
@@ -301,6 +311,7 @@ export default function EventsSection({ cityName, countryCode, theme }: EventsSe
             ))}
           </div>
         )}
+        </div>{/* end es-centre */}
       </div>
     </>
   );

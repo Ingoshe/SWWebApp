@@ -592,6 +592,27 @@ export default function DestinationsPage({
           padding-top: 44px;
         }
 
+        /* City selection prompt */
+        .dp-city-prompt {
+          text-align: center;
+          padding: 56px 40px 80px;
+          max-width: 960px;
+          margin: 0 auto;
+        }
+        .dp-city-prompt-icon {
+          font-size: 40px;
+          display: block;
+          margin-bottom: 14px;
+          opacity: 0.5;
+        }
+        .dp-city-prompt-text {
+          font-size: 14px;
+          color: #aaa;
+          margin: 0;
+          line-height: 1.6;
+          font-style: italic;
+        }
+
         /* ── Responsive ── */
         @media (max-width: 960px) {
           .dp-cards-grid { grid-template-columns: repeat(2, 280px); }
@@ -840,22 +861,32 @@ export default function DestinationsPage({
           </div>
         </div>
 
-        {/* ── Events section (shown when a city is selected) ── */}
-        {activeCityName && (
-          <EventsSection
-            cityName={activeCityName}
-            countryCode={activeCountryCode}
-            theme={activeTheme}
-          />
+        {/* ── Events + Restaurants — only shown once a specific city is selected ── */}
+        {activeCityName && activeCityObj && (
+          <>
+            <EventsSection
+              cityName={activeCityName}
+              countryCode={activeCountryCode}
+              theme={activeTheme}
+            />
+            <RestaurantsSection
+              cityId={activeCityObj.id}
+              cityName={activeCityName}
+              coords={activeCoords}
+              theme={activeTheme}
+            />
+          </>
         )}
 
-        {/* ── Restaurants section ── */}
-        <RestaurantsSection
-          cityId={activeCityObj?.id ?? "default"}
-          cityName={activeCityName}
-          coords={activeCoords}
-          theme={activeTheme}
-        />
+        {/* ── City selection prompt — shown when no city picked yet ── */}
+        {!activeCityName && (
+          <div className="dp-city-prompt">
+            <span className="dp-city-prompt-icon">🌍</span>
+            <p className="dp-city-prompt-text">
+              Select a city to discover local events and restaurant recommendations
+            </p>
+          </div>
+        )}
 
       </div>
 
