@@ -1,11 +1,11 @@
-import { useState, useEffect, useCallback, useMemo,} from "react";
+import { useState, useEffect, useCallback, useMemo, useRef } from "react";
 
 /* ── Resolve API key once at module level so it is stable across renders ── */
 const _rawKey = import.meta.env.VITE_GOOGLE_PLACES_API_KEY as string | undefined;
-const GOOGLE_API_KEY: string | null =
+const GOOGLE_API_KEY: string | undefined =
   _rawKey && _rawKey !== "undefined" && _rawKey.trim() !== ""
     ? _rawKey.trim()
-    : null;
+    : undefined;
 import RestaurantCard, { RestaurantCardSkeleton } from "./RestaurantCard";
 import type {
   GooglePlace,
@@ -209,7 +209,7 @@ export default function RestaurantsSection({
   const [allPlaces,    setAllPlaces]    = useState<GooglePlace[]>([]);
   const [loading,      setLoading]      = useState(false);
   const [error,        setError]        = useState<string | null>(null);
-  const [,   setIsFallback]   = useState(false);
+  const [isFallback,   setIsFallback]   = useState(false);
 
   /* Filter state */
   const [cuisine,    setCuisine]    = useState<CuisineFilter>("All");
