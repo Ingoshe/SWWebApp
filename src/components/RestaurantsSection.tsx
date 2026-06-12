@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useMemo, useRef } from "react";
+import { useState, useEffect, useCallback, useMemo } from "react";
 
 /* ── Resolve API key once at module level so it is stable across renders ── */
 const _rawKey = import.meta.env.VITE_GOOGLE_PLACES_API_KEY as string | undefined;
@@ -209,7 +209,6 @@ export default function RestaurantsSection({
   const [allPlaces,    setAllPlaces]    = useState<GooglePlace[]>([]);
   const [loading,      setLoading]      = useState(false);
   const [error,        setError]        = useState<string | null>(null);
-  const [isFallback,   setIsFallback]   = useState(false);
 
   /* Filter state */
   const [cuisine,    setCuisine]    = useState<CuisineFilter>("All");
@@ -226,14 +225,12 @@ export default function RestaurantsSection({
     // No API key — show fallback immediately regardless of coords
     if (!apiKey) {
       setAllPlaces(FALLBACK_RESTAURANTS);
-      setIsFallback(true);
       setLoading(false);
       return;
     }
     // API key present but no coords yet — show fallback until city selected
     if (!coords) {
       setAllPlaces(FALLBACK_RESTAURANTS);
-      setIsFallback(true);
       setLoading(false);
       return;
     }
@@ -244,7 +241,6 @@ export default function RestaurantsSection({
 
     setLoading(true);
     setError(null);
-    setIsFallback(false);
 
     try {
       const res = await fetch(
